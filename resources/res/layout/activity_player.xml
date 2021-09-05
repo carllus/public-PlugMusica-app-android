@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFAE4">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:gravity="center" >
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:background="@mipmap/bg_destaque"
+                    android:gravity="center"
+                    android:padding="5sp">
+                    <ImageView
+                        android:id="@+id/imgBanda"
+                        android:background="@mipmap/cd_cover"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:id="@+id/txvText"
+                        android:text="--"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0sp"
+                        android:textColor="#FF000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/txvSubtext"
+                        android:text="--"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0sp"
+                        android:textColor="#FF000000"
+                        android:textSize="11dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="5sp">
+                        <LinearLayout
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:padding="0sp">
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:padding="0sp">
+                                <TextView
+                                    android:id="@+id/txvFaixa"
+                                    android:text="forrozapp-01.mp3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0sp"
+                                    android:textColor="#FF000000"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btnBaixar"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="@mipmap/baixar" />
+
+
+
+                        </LinearLayout>
+                        <SeekBar
+                            android:id="@+id/seekBar1"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:padding="0sp">
+                        <ImageButton
+                            android:id="@+id/btnBack"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="3dp"
+                            android:background="@mipmap/back" />
+                        <ImageButton
+                            android:id="@+id/btnPlay"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="3dp"
+                            android:background="@mipmap/play" />
+                        <ImageButton
+                            android:id="@+id/btnStop"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="3dp"
+                            android:background="@mipmap/stop" />
+                        <ImageButton
+                            android:id="@+id/btnNext"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="3dp"
+                            android:background="@mipmap/next" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_home_footer">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+    </LinearLayout>

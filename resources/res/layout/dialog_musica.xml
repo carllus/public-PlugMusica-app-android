@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+ 
+    
+ 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="O que deseja realizar?"
+        android:layout_toRightOf="@+id/image"/>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal">"
+
+	    <ImageButton
+	        android:id="@+id/imgbtnPlay"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_margin="10dp"
+	        android:background="@mipmap/play" />
+	    
+	    <ImageButton
+	        android:id="@+id/imgbtnBaixar"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_margin="10dp"
+	        android:background="@mipmap/baixar" />
+    
+    </LinearLayout>
+     
+ 
+</LinearLayout>

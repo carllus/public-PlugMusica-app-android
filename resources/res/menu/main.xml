@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.forrozapp.meuforroapp.android.MainActivity">
+    <item
+        android:id="@+id/pesquisar"
+        android:orderInCategory="100"
+        android:title="Pesquisar"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/compartilhar"
+        android:orderInCategory="100"
+        android:title="Compartilhar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sobrenos"
+        android:orderInCategory="100"
+        android:title="Reivindicações e termos"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/facebook"
+        android:orderInCategory="100"
+        android:title="Facebook"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/instagram"
+        android:orderInCategory="100"
+        android:title="Instagram"
+        app:showAsAction="never"/>
+    <!--
+    <item
+        android:id="@+id/instacarllus"
+        android:orderInCategory="100"
+        android:title="InstaCarllus"
+        app:showAsAction="never"/>
+    -->
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search_title"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"/>
+
+</menu>

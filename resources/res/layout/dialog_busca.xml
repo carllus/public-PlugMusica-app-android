@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+ 
+    
+ 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="O que deseja buscar?"
+        android:layout_toRightOf="@+id/image"/>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="'nome Banda' ou 'Cidade'"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+"
+	    <ImageButton
+        android:id="@+id/imgbtnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_action_search" />
+    
+    </LinearLayout>
+
+    
+ 
+</LinearLayout>

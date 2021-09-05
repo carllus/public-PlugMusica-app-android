@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+	        android:id="@+id/text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Visualize os termos atualizados em PlugMusica.com
+	        \n
+	        ps. Ao utilizar dos serviços do PlugMusica.com, nos aplicativos ou no site, você concorda com as normas estabelecidas nas regras de uso contidas no termo."
+	        
+	        android:layout_toRightOf="@+id/image"/>
+            
+        </LinearLayout>
+    </ScrollView>
+ 
+</LinearLayout>

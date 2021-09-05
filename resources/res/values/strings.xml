@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">PlugMusica.com</string>
+    <string name="title_section1">Destaques</string>
+    <string name="title_section2">TOP Bimestre</string>
+    <string name="title_section3">TOP Mês</string>
+    <string name="title_section4">TOP Semana</string>
+    <string name="title_section5">TOP 48h</string>
+    <string name="title_section6">+Recentes</string>
+
+
+    <string name="action_settings">Pesquisar</string>
+    <string name="search_title">Pesquisar</string>
+
+    <string name="title_activity_splash_fullscreen">SplashFullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="title_activity_second_activiy">Interstitial</string>
+    <string name="msg_welcome">Welcome to Admob. Click on the below button to launch the Interstitial ad.</string>
+    <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-3491610413834288/4900950854</string>
+    <string name="interstitial_full_screen">ca-app-pub-3491610413834288/6377684059</string>
+
+
+</resources>
